@@ -123,13 +123,13 @@ private struct StreamReader {
 	/// - Parameter length: length of data to read
 	/// - Returns: read value
 	/// - Throws: throw an exception if data cannot be read or it's not available
-	mutating func readData(length: Int) throws -> Data {
+	mutating func readData(length: Int) throws -> [UInt8] {
 		guard index + length <= data.count else {
 			throw MsgPackError.unexpectedData
 		}
 		let range = Range(index..<(index + length))
 		index += length
-		return data.subdata(in: range)
+		return [UInt8](data.subdata(in: range))
 	}
 }
 
@@ -376,8 +376,8 @@ public extension Data {
 	/// - Returns: decoded string
 	/// - Throws: throw an exception if failed to decoded data
 	private func unpack(string stream: inout StreamReader, length: Int) throws -> String {
-		let data = try stream.readData(length: length)
-		guard let str = String(data: data, encoding: String.Encoding.utf8) else {
+		let bytes = try stream.readData(length: length)
+		guard let str = String(bytes: bytes, encoding: String.Encoding.utf8) else {
 			throw MsgPackError.invalidEncoding
 		}
 		return str

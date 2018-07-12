@@ -137,7 +137,10 @@ public extension Data {
 		else if let value_bool = obj as? Bool {
 			try self.pack(boolean: value_bool)
 		}
-		
+        // DATA (as [UInt8])
+        else if let value_data = obj as? [UInt8] {
+            try self.pack(bytes: value_data)
+        }
 		// ARRAY
 		else if let value_array = obj as? [Any?] {
 			try self.pack(array: value_array)
@@ -149,10 +152,6 @@ public extension Data {
 		// DICTIONARIES WITH OPTIONAL VALUES
 		else if let value_dict = obj as? [AnyHashable: Any?] {
 			try self.pack(dict: value_dict)
-		}
-		// DATA
-		else if let value_data = obj as? Data {
-			try self.pack(data: value_data)
 		}
 			
 		// Not supported fallback
@@ -356,19 +355,19 @@ public extension Data {
 	
 	// MARK: - Pack Data
 	
-	/// Pack `Data` instance
+	/// Pack `[UInt8]` instance
 	///
 	/// - Parameter value: value to pack
 	/// - Returns: the instance of `self` modified with the packed data
 	/// - Throws: throw an exception if data is too large to be contained in a MsgPack data
-	@discardableResult
-	private mutating func pack(data value: Data) throws -> Data {
-		// Write data prefix based upon the length
-		try self.writeHeader(forData: value.count)
-		// Append the data itself
-		self.writeData(value)
-		return self
-	}
+    @discardableResult
+    private mutating func pack(bytes value: [UInt8]) throws -> Data {
+        // Write data prefix based upon the length
+        try self.writeHeader(forData: value.count)
+        // Append the data itself
+        self.writeBytes(value)
+        return self
+    }
 	
 	// MARK: - Pack Array
 	
@@ -440,7 +439,10 @@ public extension Data {
 	private mutating func writeData(_ data: Data) {
 		self.append(data)
 	}
-	
+
+    private mutating func writeBytes(_ bytes: [UInt8]) {
+        self.append(contentsOf: bytes)
+    }
 	
 	private mutating func writeHeader(forDictionary length: Int) throws {
 		// Write header
