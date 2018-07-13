@@ -127,7 +127,7 @@ private struct StreamReader {
 		guard index + length <= data.count else {
 			throw MsgPackError.unexpectedData
 		}
-		let range = Range(index..<(index + length))
+		let range = index..<(index + length)
 		index += length
 		return [UInt8](data.subdata(in: range))
 	}
