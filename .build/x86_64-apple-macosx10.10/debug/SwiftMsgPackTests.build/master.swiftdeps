@@ -1,0 +1,10 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "3b623510411416f52f19836cc801e6be"
+build_time: [1545138083, 377666000]
+inputs:
+  "/Users/kirilltitov/work/Elegion/SwiftMsgPack/Tests/SwiftMsgPackTests/SwiftMsgPackTests_Array.swift": [1527685577, 0]
+  "/Users/kirilltitov/work/Elegion/SwiftMsgPack/Tests/SwiftMsgPackTests/SwiftMsgPackTests_BoolNil.swift": [1527685577, 0]
+  "/Users/kirilltitov/work/Elegion/SwiftMsgPack/Tests/SwiftMsgPackTests/SwiftMsgPackTests_Data.swift": [1527685577, 0]
+  "/Users/kirilltitov/work/Elegion/SwiftMsgPack/Tests/SwiftMsgPackTests/SwiftMsgPackTests_Dictionary.swift": [1527685577, 0]
+  "/Users/kirilltitov/work/Elegion/SwiftMsgPack/Tests/SwiftMsgPackTests/SwiftMsgPackTests_Numeric.swift": [1527685577, 0]
+  "/Users/kirilltitov/work/Elegion/SwiftMsgPack/Tests/SwiftMsgPackTests/SwiftMsgPackTests_String.swift": [1527685577, 0]

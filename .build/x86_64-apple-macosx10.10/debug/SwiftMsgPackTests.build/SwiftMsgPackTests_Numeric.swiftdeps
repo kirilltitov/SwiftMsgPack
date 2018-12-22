@@ -1,0 +1,793 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SwiftMsgPackTests_Numeric"
+provides-nominal:
+- "17SwiftMsgPackTests0abcD8_NumericC"
+provides-member:
+- ["17SwiftMsgPackTests0abcD8_NumericC", ""]
+provides-dynamic-lookup:
+- "performTestDouble"
+- "performTestFloat"
+- "performTestInt16"
+- "performTestInt32"
+- "performTestInt64"
+- "performTestInt8"
+- "performTestUInt16"
+- "performTestUInt32"
+- "performTestUInt64"
+- "performTestUInt8"
+- "setUp"
+- "tearDown"
+- "testDouble"
+- "testFloat"
+- "testInt16"
+- "testInt32"
+- "testInt64"
+- "testInt8"
+- "testUInt16"
+- "testUInt32"
+- "testUInt64"
+- "testUInt8"
+depends-top-level:
+- !private "+"
+- !private "+="
+- !private "-"
+- !private "=="
+- !private "Array"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- !private "Data"
+- "Double"
+- "Float"
+- !private "FloatLiteralType"
+- "Int16"
+- "Int32"
+- "Int64"
+- "Int8"
+- !private "IntegerLiteralType"
+- "String"
+- !private "StringLiteralType"
+- "SwiftMsgPackTests_Numeric"
+- "UInt16"
+- "UInt32"
+- "UInt64"
+- "UInt8"
+- !private "UnicodeScalarType"
+- !private "XCTFail"
+- "XCTestCase"
+depends-member:
+- !private ["Sa", "count"]
+- !private ["Sa", "subscript"]
+- !private ["s13ArrayProtocolP", "count"]
+- !private ["s13ArrayProtocolP", "subscript"]
+- !private ["SK", "count"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "pack"]
+- !private ["SK", "subscript"]
+- !private ["SK", "unpack"]
+- !private ["SB", "init"]
+- !private ["Sz", "init"]
+- !private ["Sz", "max"]
+- !private ["Sz", "min"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "Data"]
+- !private ["s7CVarArgP", "Double"]
+- !private ["s7CVarArgP", "Float"]
+- !private ["s7CVarArgP", "Int16"]
+- !private ["s7CVarArgP", "Int32"]
+- !private ["s7CVarArgP", "Int64"]
+- !private ["s7CVarArgP", "Int8"]
+- !private ["s7CVarArgP", "UInt16"]
+- !private ["s7CVarArgP", "UInt32"]
+- !private ["s7CVarArgP", "UInt64"]
+- !private ["s7CVarArgP", "UInt8"]
+- !private ["s7CVarArgP", "XCTFail"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "max"]
+- !private ["s7CVarArgP", "min"]
+- !private ["s7CVarArgP", "performTestDouble"]
+- !private ["s7CVarArgP", "performTestFloat"]
+- !private ["s7CVarArgP", "performTestInt16"]
+- !private ["s7CVarArgP", "performTestInt32"]
+- !private ["s7CVarArgP", "performTestInt64"]
+- !private ["s7CVarArgP", "performTestInt8"]
+- !private ["s7CVarArgP", "performTestUInt16"]
+- !private ["s7CVarArgP", "performTestUInt32"]
+- !private ["s7CVarArgP", "performTestUInt64"]
+- !private ["s7CVarArgP", "performTestUInt8"]
+- !private ["s7CVarArgP", "setUp"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "tearDown"]
+- !private ["Sl", "count"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "pack"]
+- !private ["Sl", "subscript"]
+- !private ["Sl", "unpack"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "max"]
+- !private ["SL", "min"]
+- !private ["s28CustomDebugStringConvertibleP", "Data"]
+- !private ["s28CustomDebugStringConvertibleP", "Double"]
+- !private ["s28CustomDebugStringConvertibleP", "Float"]
+- !private ["s28CustomDebugStringConvertibleP", "Int16"]
+- !private ["s28CustomDebugStringConvertibleP", "Int32"]
+- !private ["s28CustomDebugStringConvertibleP", "Int64"]
+- !private ["s28CustomDebugStringConvertibleP", "Int8"]
+- !private ["s28CustomDebugStringConvertibleP", "UInt16"]
+- !private ["s28CustomDebugStringConvertibleP", "UInt32"]
+- !private ["s28CustomDebugStringConvertibleP", "UInt64"]
+- !private ["s28CustomDebugStringConvertibleP", "UInt8"]
+- !private ["s28CustomDebugStringConvertibleP", "XCTFail"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "pack"]
+- !private ["s28CustomDebugStringConvertibleP", "performTestDouble"]
+- !private ["s28CustomDebugStringConvertibleP", "performTestFloat"]
+- !private ["s28CustomDebugStringConvertibleP", "performTestInt16"]
+- !private ["s28CustomDebugStringConvertibleP", "performTestInt32"]
+- !private ["s28CustomDebugStringConvertibleP", "performTestInt64"]
+- !private ["s28CustomDebugStringConvertibleP", "performTestInt8"]
+- !private ["s28CustomDebugStringConvertibleP", "performTestUInt16"]
+- !private ["s28CustomDebugStringConvertibleP", "performTestUInt32"]
+- !private ["s28CustomDebugStringConvertibleP", "performTestUInt64"]
+- !private ["s28CustomDebugStringConvertibleP", "performTestUInt8"]
+- !private ["s28CustomDebugStringConvertibleP", "setUp"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "tearDown"]
+- !private ["s28CustomDebugStringConvertibleP", "unpack"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "max"]
+- !private ["s29CustomPlaygroundQuickLookableP", "min"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "max"]
+- !private ["s17CustomReflectableP", "min"]
+- !private ["s17CustomReflectableP", "pack"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "unpack"]
+- !private ["s23CustomStringConvertibleP", "Data"]
+- !private ["s23CustomStringConvertibleP", "Double"]
+- !private ["s23CustomStringConvertibleP", "Float"]
+- !private ["s23CustomStringConvertibleP", "Int16"]
+- !private ["s23CustomStringConvertibleP", "Int32"]
+- !private ["s23CustomStringConvertibleP", "Int64"]
+- !private ["s23CustomStringConvertibleP", "Int8"]
+- !private ["s23CustomStringConvertibleP", "UInt16"]
+- !private ["s23CustomStringConvertibleP", "UInt32"]
+- !private ["s23CustomStringConvertibleP", "UInt64"]
+- !private ["s23CustomStringConvertibleP", "UInt8"]
+- !private ["s23CustomStringConvertibleP", "XCTFail"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "max"]
+- !private ["s23CustomStringConvertibleP", "min"]
+- !private ["s23CustomStringConvertibleP", "pack"]
+- !private ["s23CustomStringConvertibleP", "performTestDouble"]
+- !private ["s23CustomStringConvertibleP", "performTestFloat"]
+- !private ["s23CustomStringConvertibleP", "performTestInt16"]
+- !private ["s23CustomStringConvertibleP", "performTestInt32"]
+- !private ["s23CustomStringConvertibleP", "performTestInt64"]
+- !private ["s23CustomStringConvertibleP", "performTestInt8"]
+- !private ["s23CustomStringConvertibleP", "performTestUInt16"]
+- !private ["s23CustomStringConvertibleP", "performTestUInt32"]
+- !private ["s23CustomStringConvertibleP", "performTestUInt64"]
+- !private ["s23CustomStringConvertibleP", "performTestUInt8"]
+- !private ["s23CustomStringConvertibleP", "setUp"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "tearDown"]
+- !private ["s23CustomStringConvertibleP", "unpack"]
+- !private ["10Foundation4DataV", "count"]
+- !private ["10Foundation4DataV", "init"]
+- !private ["10Foundation4DataV", "pack"]
+- !private ["10Foundation4DataV", "unpack"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "count"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "max"]
+- !private ["Se", "min"]
+- !private ["Se", "pack"]
+- !private ["Se", "subscript"]
+- !private ["Se", "unpack"]
+- !private ["Sd", "init"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "count"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "max"]
+- !private ["SE", "min"]
+- !private ["SE", "pack"]
+- !private ["SE", "subscript"]
+- !private ["SE", "unpack"]
+- !private ["SQ", "Data"]
+- !private ["SQ", "Double"]
+- !private ["SQ", "Float"]
+- !private ["SQ", "Int16"]
+- !private ["SQ", "Int32"]
+- !private ["SQ", "Int64"]
+- !private ["SQ", "Int8"]
+- !private ["SQ", "UInt16"]
+- !private ["SQ", "UInt32"]
+- !private ["SQ", "UInt64"]
+- !private ["SQ", "UInt8"]
+- !private ["SQ", "XCTFail"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "count"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "max"]
+- !private ["SQ", "min"]
+- !private ["SQ", "pack"]
+- !private ["SQ", "performTestDouble"]
+- !private ["SQ", "performTestFloat"]
+- !private ["SQ", "performTestInt16"]
+- !private ["SQ", "performTestInt32"]
+- !private ["SQ", "performTestInt64"]
+- !private ["SQ", "performTestInt8"]
+- !private ["SQ", "performTestUInt16"]
+- !private ["SQ", "performTestUInt32"]
+- !private ["SQ", "performTestUInt64"]
+- !private ["SQ", "performTestUInt8"]
+- !private ["SQ", "setUp"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "tearDown"]
+- !private ["SQ", "unpack"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "max"]
+- !private ["s27ExpressibleByIntegerLiteralP", "min"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["s17FixedWidthIntegerP", "max"]
+- !private ["s17FixedWidthIntegerP", "min"]
+- !private ["Sf", "init"]
+- !private ["SF", "init"]
+- !private ["SH", "Data"]
+- !private ["SH", "Double"]
+- !private ["SH", "Float"]
+- !private ["SH", "Int16"]
+- !private ["SH", "Int32"]
+- !private ["SH", "Int64"]
+- !private ["SH", "Int8"]
+- !private ["SH", "UInt16"]
+- !private ["SH", "UInt32"]
+- !private ["SH", "UInt64"]
+- !private ["SH", "UInt8"]
+- !private ["SH", "XCTFail"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "count"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "max"]
+- !private ["SH", "min"]
+- !private ["SH", "pack"]
+- !private ["SH", "performTestDouble"]
+- !private ["SH", "performTestFloat"]
+- !private ["SH", "performTestInt16"]
+- !private ["SH", "performTestInt32"]
+- !private ["SH", "performTestInt64"]
+- !private ["SH", "performTestInt8"]
+- !private ["SH", "performTestUInt16"]
+- !private ["SH", "performTestUInt32"]
+- !private ["SH", "performTestUInt64"]
+- !private ["SH", "performTestUInt8"]
+- !private ["SH", "setUp"]
+- !private ["SH", "subscript"]
+- !private ["SH", "tearDown"]
+- !private ["SH", "unpack"]
+- !private ["s5Int16V", "init"]
+- !private ["s5Int16V", "max"]
+- !private ["s5Int16V", "min"]
+- !private ["s5Int32V", "init"]
+- !private ["s5Int32V", "max"]
+- !private ["s5Int32V", "min"]
+- !private ["s5Int64V", "init"]
+- !private ["s5Int64V", "max"]
+- !private ["s5Int64V", "min"]
+- !private ["s4Int8V", "init"]
+- !private ["s4Int8V", "max"]
+- !private ["s4Int8V", "min"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "max"]
+- !private ["s25LosslessStringConvertibleP", "min"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "count"]
+- !private ["SM", "init"]
+- !private ["SM", "pack"]
+- !private ["SM", "subscript"]
+- !private ["SM", "unpack"]
+- !private ["So8NSObjectC", "Data"]
+- ["So8NSObjectC", "Double"]
+- ["So8NSObjectC", "Float"]
+- ["So8NSObjectC", "Int16"]
+- ["So8NSObjectC", "Int32"]
+- ["So8NSObjectC", "Int64"]
+- ["So8NSObjectC", "Int8"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UInt16"]
+- ["So8NSObjectC", "UInt32"]
+- ["So8NSObjectC", "UInt64"]
+- ["So8NSObjectC", "UInt8"]
+- !private ["So8NSObjectC", "XCTFail"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "performTestDouble"]
+- ["So8NSObjectC", "performTestFloat"]
+- ["So8NSObjectC", "performTestInt16"]
+- ["So8NSObjectC", "performTestInt32"]
+- ["So8NSObjectC", "performTestInt64"]
+- ["So8NSObjectC", "performTestInt8"]
+- ["So8NSObjectC", "performTestUInt16"]
+- ["So8NSObjectC", "performTestUInt32"]
+- ["So8NSObjectC", "performTestUInt64"]
+- ["So8NSObjectC", "performTestUInt8"]
+- ["So8NSObjectC", "setUp"]
+- ["So8NSObjectC", "tearDown"]
+- ["So8NSObjectC", "testDouble"]
+- ["So8NSObjectC", "testFloat"]
+- ["So8NSObjectC", "testInt16"]
+- ["So8NSObjectC", "testInt32"]
+- ["So8NSObjectC", "testInt64"]
+- ["So8NSObjectC", "testInt8"]
+- ["So8NSObjectC", "testUInt16"]
+- ["So8NSObjectC", "testUInt32"]
+- ["So8NSObjectC", "testUInt64"]
+- ["So8NSObjectC", "testUInt8"]
+- !private ["So8NSObjectP", "Data"]
+- !private ["So8NSObjectP", "Double"]
+- !private ["So8NSObjectP", "Float"]
+- !private ["So8NSObjectP", "Int16"]
+- !private ["So8NSObjectP", "Int32"]
+- !private ["So8NSObjectP", "Int64"]
+- !private ["So8NSObjectP", "Int8"]
+- !private ["So8NSObjectP", "UInt16"]
+- !private ["So8NSObjectP", "UInt32"]
+- !private ["So8NSObjectP", "UInt64"]
+- !private ["So8NSObjectP", "UInt8"]
+- !private ["So8NSObjectP", "XCTFail"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "performTestDouble"]
+- !private ["So8NSObjectP", "performTestFloat"]
+- !private ["So8NSObjectP", "performTestInt16"]
+- !private ["So8NSObjectP", "performTestInt32"]
+- !private ["So8NSObjectP", "performTestInt64"]
+- !private ["So8NSObjectP", "performTestInt8"]
+- !private ["So8NSObjectP", "performTestUInt16"]
+- !private ["So8NSObjectP", "performTestUInt32"]
+- !private ["So8NSObjectP", "performTestUInt64"]
+- !private ["So8NSObjectP", "performTestUInt8"]
+- !private ["So8NSObjectP", "setUp"]
+- !private ["So8NSObjectP", "tearDown"]
+- !private ["Sj", "init"]
+- !private ["Sj", "max"]
+- !private ["Sj", "min"]
+- !private ["Sk", "count"]
+- !private ["Sk", "init"]
+- !private ["Sk", "pack"]
+- !private ["Sk", "subscript"]
+- !private ["Sk", "unpack"]
+- !private ["Sm", "count"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "pack"]
+- !private ["Sm", "subscript"]
+- !private ["Sm", "unpack"]
+- !private ["10Foundation20ReferenceConvertibleP", "count"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "pack"]
+- !private ["10Foundation20ReferenceConvertibleP", "unpack"]
+- !private ["ST", "count"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "pack"]
+- !private ["ST", "subscript"]
+- !private ["ST", "unpack"]
+- !private ["SZ", "init"]
+- !private ["SZ", "max"]
+- !private ["SZ", "min"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s13SignedNumericP", "max"]
+- !private ["s13SignedNumericP", "min"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["Sx", "init"]
+- !private ["Sx", "max"]
+- !private ["Sx", "min"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["17SwiftMsgPackTests0abcD8_NumericC", "Data"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "Double"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "Float"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "Int16"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "Int32"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "Int64"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "Int8"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "String"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "UInt16"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "UInt32"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "UInt64"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "UInt8"]
+- !private ["17SwiftMsgPackTests0abcD8_NumericC", "XCTFail"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "init"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "performTestDouble"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "performTestFloat"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "performTestInt16"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "performTestInt32"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "performTestInt64"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "performTestInt8"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "performTestUInt16"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "performTestUInt32"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "performTestUInt64"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "performTestUInt8"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "setUp"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "tearDown"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "testDouble"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "testFloat"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "testInt16"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "testInt32"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "testInt64"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "testInt8"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "testUInt16"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "testUInt32"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "testUInt64"]
+- ["17SwiftMsgPackTests0abcD8_NumericC", "testUInt8"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s6UInt16V", "init"]
+- !private ["s6UInt16V", "max"]
+- !private ["s6UInt32V", "init"]
+- !private ["s6UInt32V", "max"]
+- !private ["s6UInt64V", "init"]
+- !private ["s6UInt64V", "max"]
+- !private ["s5UInt8V", "init"]
+- !private ["s5UInt8V", "max"]
+- !private ["SU", "init"]
+- !private ["SU", "max"]
+- !private ["So11XCTActivityP", "Data"]
+- !private ["So11XCTActivityP", "Double"]
+- !private ["So11XCTActivityP", "Float"]
+- !private ["So11XCTActivityP", "Int16"]
+- !private ["So11XCTActivityP", "Int32"]
+- !private ["So11XCTActivityP", "Int64"]
+- !private ["So11XCTActivityP", "Int8"]
+- !private ["So11XCTActivityP", "UInt16"]
+- !private ["So11XCTActivityP", "UInt32"]
+- !private ["So11XCTActivityP", "UInt64"]
+- !private ["So11XCTActivityP", "UInt8"]
+- !private ["So11XCTActivityP", "XCTFail"]
+- ["So11XCTActivityP", ""]
+- !private ["So11XCTActivityP", "init"]
+- !private ["So11XCTActivityP", "init"]
+- !private ["So11XCTActivityP", "performTestDouble"]
+- !private ["So11XCTActivityP", "performTestFloat"]
+- !private ["So11XCTActivityP", "performTestInt16"]
+- !private ["So11XCTActivityP", "performTestInt32"]
+- !private ["So11XCTActivityP", "performTestInt64"]
+- !private ["So11XCTActivityP", "performTestInt8"]
+- !private ["So11XCTActivityP", "performTestUInt16"]
+- !private ["So11XCTActivityP", "performTestUInt32"]
+- !private ["So11XCTActivityP", "performTestUInt64"]
+- !private ["So11XCTActivityP", "performTestUInt8"]
+- !private ["So11XCTActivityP", "setUp"]
+- !private ["So11XCTActivityP", "tearDown"]
+- !private ["So17XCTWaiterDelegateP", "Data"]
+- !private ["So17XCTWaiterDelegateP", "Double"]
+- !private ["So17XCTWaiterDelegateP", "Float"]
+- !private ["So17XCTWaiterDelegateP", "Int16"]
+- !private ["So17XCTWaiterDelegateP", "Int32"]
+- !private ["So17XCTWaiterDelegateP", "Int64"]
+- !private ["So17XCTWaiterDelegateP", "Int8"]
+- !private ["So17XCTWaiterDelegateP", "UInt16"]
+- !private ["So17XCTWaiterDelegateP", "UInt32"]
+- !private ["So17XCTWaiterDelegateP", "UInt64"]
+- !private ["So17XCTWaiterDelegateP", "UInt8"]
+- !private ["So17XCTWaiterDelegateP", "XCTFail"]
+- ["So17XCTWaiterDelegateP", ""]
+- !private ["So17XCTWaiterDelegateP", "init"]
+- !private ["So17XCTWaiterDelegateP", "init"]
+- !private ["So17XCTWaiterDelegateP", "performTestDouble"]
+- !private ["So17XCTWaiterDelegateP", "performTestFloat"]
+- !private ["So17XCTWaiterDelegateP", "performTestInt16"]
+- !private ["So17XCTWaiterDelegateP", "performTestInt32"]
+- !private ["So17XCTWaiterDelegateP", "performTestInt64"]
+- !private ["So17XCTWaiterDelegateP", "performTestInt8"]
+- !private ["So17XCTWaiterDelegateP", "performTestUInt16"]
+- !private ["So17XCTWaiterDelegateP", "performTestUInt32"]
+- !private ["So17XCTWaiterDelegateP", "performTestUInt64"]
+- !private ["So17XCTWaiterDelegateP", "performTestUInt8"]
+- !private ["So17XCTWaiterDelegateP", "setUp"]
+- !private ["So17XCTWaiterDelegateP", "tearDown"]
+- !private ["So6XCTestC", "Data"]
+- ["So6XCTestC", "Double"]
+- ["So6XCTestC", "Float"]
+- ["So6XCTestC", "Int16"]
+- ["So6XCTestC", "Int32"]
+- ["So6XCTestC", "Int64"]
+- ["So6XCTestC", "Int8"]
+- ["So6XCTestC", "String"]
+- ["So6XCTestC", "UInt16"]
+- ["So6XCTestC", "UInt32"]
+- ["So6XCTestC", "UInt64"]
+- ["So6XCTestC", "UInt8"]
+- !private ["So6XCTestC", "XCTFail"]
+- ["So6XCTestC", "init"]
+- !private ["So6XCTestC", "init"]
+- ["So6XCTestC", "performTestDouble"]
+- ["So6XCTestC", "performTestFloat"]
+- ["So6XCTestC", "performTestInt16"]
+- ["So6XCTestC", "performTestInt32"]
+- ["So6XCTestC", "performTestInt64"]
+- ["So6XCTestC", "performTestInt8"]
+- ["So6XCTestC", "performTestUInt16"]
+- ["So6XCTestC", "performTestUInt32"]
+- ["So6XCTestC", "performTestUInt64"]
+- ["So6XCTestC", "performTestUInt8"]
+- ["So6XCTestC", "setUp"]
+- ["So6XCTestC", "tearDown"]
+- ["So6XCTestC", "testDouble"]
+- ["So6XCTestC", "testFloat"]
+- ["So6XCTestC", "testInt16"]
+- ["So6XCTestC", "testInt32"]
+- ["So6XCTestC", "testInt64"]
+- ["So6XCTestC", "testInt8"]
+- ["So6XCTestC", "testUInt16"]
+- ["So6XCTestC", "testUInt32"]
+- ["So6XCTestC", "testUInt64"]
+- ["So6XCTestC", "testUInt8"]
+- !private ["So10XCTestCaseC", "Data"]
+- ["So10XCTestCaseC", "Double"]
+- ["So10XCTestCaseC", "Float"]
+- ["So10XCTestCaseC", "Int16"]
+- ["So10XCTestCaseC", "Int32"]
+- ["So10XCTestCaseC", "Int64"]
+- ["So10XCTestCaseC", "Int8"]
+- ["So10XCTestCaseC", "String"]
+- ["So10XCTestCaseC", "UInt16"]
+- ["So10XCTestCaseC", "UInt32"]
+- ["So10XCTestCaseC", "UInt64"]
+- ["So10XCTestCaseC", "UInt8"]
+- !private ["So10XCTestCaseC", "XCTFail"]
+- ["So10XCTestCaseC", ""]
+- ["So10XCTestCaseC", "init"]
+- !private ["So10XCTestCaseC", "init"]
+- ["So10XCTestCaseC", "performTestDouble"]
+- ["So10XCTestCaseC", "performTestFloat"]
+- ["So10XCTestCaseC", "performTestInt16"]
+- ["So10XCTestCaseC", "performTestInt32"]
+- ["So10XCTestCaseC", "performTestInt64"]
+- ["So10XCTestCaseC", "performTestInt8"]
+- ["So10XCTestCaseC", "performTestUInt16"]
+- ["So10XCTestCaseC", "performTestUInt32"]
+- ["So10XCTestCaseC", "performTestUInt64"]
+- ["So10XCTestCaseC", "performTestUInt8"]
+- ["So10XCTestCaseC", "setUp"]
+- ["So10XCTestCaseC", "tearDown"]
+- ["So10XCTestCaseC", "testDouble"]
+- ["So10XCTestCaseC", "testFloat"]
+- ["So10XCTestCaseC", "testInt16"]
+- ["So10XCTestCaseC", "testInt32"]
+- ["So10XCTestCaseC", "testInt64"]
+- ["So10XCTestCaseC", "testInt8"]
+- ["So10XCTestCaseC", "testUInt16"]
+- ["So10XCTestCaseC", "testUInt32"]
+- ["So10XCTestCaseC", "testUInt64"]
+- ["So10XCTestCaseC", "testUInt8"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["s18_BitwiseOperationsP", "max"]
+- !private ["s18_BitwiseOperationsP", "min"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s15_CVarArgAlignedP", "max"]
+- !private ["s15_CVarArgAlignedP", "min"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "max"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "min"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "max"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "min"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Data"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Double"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Float"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Int16"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Int32"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Int64"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Int8"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UInt16"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UInt32"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UInt64"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UInt8"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "XCTFail"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "performTestDouble"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "performTestFloat"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "performTestInt16"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "performTestInt32"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "performTestInt64"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "performTestInt8"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "performTestUInt16"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "performTestUInt32"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "performTestUInt64"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "performTestUInt8"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setUp"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tearDown"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "max"]
+- !private ["s21_ObjectiveCBridgeableP", "min"]
+- !private ["s21_ObjectiveCBridgeableP", "pack"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "unpack"]
+- !private ["s14_StringElementP", "init"]
+- !private ["s14_StringElementP", "max"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "s13ArrayProtocolP"
+- !private "SK"
+- !private "SB"
+- !private "Sz"
+- !private "Sb"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation4DataV"
+- !private "Se"
+- !private "Sd"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "Sf"
+- !private "SF"
+- "SH"
+- !private "s5Int16V"
+- !private "s5Int32V"
+- !private "s5Int64V"
+- !private "s4Int8V"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "SM"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "Sj"
+- !private "Sk"
+- !private "Sm"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "ST"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- !private "s12StaticStringV"
+- !private "Sx"
+- !private "SS"
+- !private "Sy"
+- "17SwiftMsgPackTests0abcD8_NumericC"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s6UInt16V"
+- !private "s6UInt32V"
+- !private "s6UInt64V"
+- !private "s5UInt8V"
+- !private "SU"
+- "So11XCTActivityP"
+- "So17XCTWaiterDelegateP"
+- "So6XCTestC"
+- "So10XCTestCaseC"
+- !private "s18_BitwiseOperationsP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s14_StringElementP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Users/kirilltitov/work/Elegion/SwiftMsgPack/.build/x86_64-apple-macosx10.10/debug/SwiftMsgPack.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XCTest.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework/Modules/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTest.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "7b37106c3b0e5186459f2c0b5478a4d2"

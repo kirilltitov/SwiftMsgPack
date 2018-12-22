@@ -1,0 +1,7 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "2760f7aa3ef4cfb179055d339cf6d35e"
+build_time: [1545138076, 936847000]
+inputs:
+  "/Users/kirilltitov/work/Elegion/SwiftMsgPack/Sources/SwiftMsgPack/Commons.swift": [1531474029, 0]
+  "/Users/kirilltitov/work/Elegion/SwiftMsgPack/Sources/SwiftMsgPack/Decoder.swift": [1531485161, 0]
+  "/Users/kirilltitov/work/Elegion/SwiftMsgPack/Sources/SwiftMsgPack/Encoder.swift": [1531474033, 0]
