@@ -144,7 +144,7 @@ public extension Data {
 	///
 	/// - Returns: decoded data
 	/// - Throws: an error if decoding task cannot be finished correctly due to an error
-	public func unpack() throws -> Any? {
+    func unpack() throws -> Any? {
 		// Create a reader which has a point to the current position in data instance
 		// and several help functions to read data
 		var reader = StreamReader(self)

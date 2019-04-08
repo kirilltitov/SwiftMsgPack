@@ -49,54 +49,53 @@ class SwiftMsgPackTests_Data: XCTestCase {
 
 	func test_shortData() {
 		let len = 6
-		let (data,exp) = generateTestData(len)
-		performTestData(name: "Test Short Data", value: data, expected: exp)
+		let (rawBytes, packedBytes) = generateTestData(len)
+		performTestData(name: "Test Short Data", value: rawBytes, expected: packedBytes)
 	}
 	
 	func test_mediumData() {
 		let len = Int( UInt16(UInt16.max - 1) )
-		let (data,exp) = generateTestData(len)
-		performTestData(name: "Test Medium Data", value: data, expected: exp)
+		let (rawBytes, packedBytes) = generateTestData(len)
+		performTestData(name: "Test Medium Data", value: rawBytes, expected: packedBytes)
 	}
 	
 	func test_bigData() {
 		let len = Int( UInt32(UInt16.max) + 1 )
-		let (data,exp) = generateTestData(len)
-		performTestData(name: "Test Long Data", value: data, expected: exp)
+		let (rawBytes, packedBytes) = generateTestData(len)
+		performTestData(name: "Test Long Data", value: rawBytes, expected: packedBytes)
 	}
 	
 	// MARK: - Helper Functions
 	
-	func generateTestData(_ length: Int) -> (Data,[UInt8]) {
-		var bytes: [UInt8] = []
-		let data_sequence: [UInt8] = generateRandomNumberSequence(length)
+    func generateTestData(_ length: Int) -> (rawBytes: [UInt8], packedBytes: [UInt8]) {
+		var packedBytes: [UInt8] = []
+		let rawBytes: [UInt8] = generateRandomNumberSequence(length)
 		
 		if length < Int(UInt8.max) {
 			// Header
-			bytes.append(UInt8(0xc4))
+			packedBytes.append(UInt8(0xc4))
 			// Length
-			bytes.append(UInt8(length))
+			packedBytes.append(UInt8(length))
 		}
 		else if length < Int(UInt16.max) {
 			// Header
-			bytes.append(UInt8(0xc5))
+			packedBytes.append(UInt8(0xc5))
 			// Length (big endian)
-			bytes.append(UInt8((length >> 8) & 0xff))
-			bytes.append(UInt8(length & 0xff))
+			packedBytes.append(UInt8((length >> 8) & 0xff))
+			packedBytes.append(UInt8(length & 0xff))
 		}
 		else if length < Int(UInt32.max) {
-			bytes.append(UInt8(0xc6))
+			packedBytes.append(UInt8(0xc6))
 			// Length (big endian)
-			bytes.append(UInt8((length >> 24) & 0xff))
-			bytes.append(UInt8((length >> 16) & 0xff))
-			bytes.append(UInt8((length >> 8) & 0xff))
-			bytes.append(UInt8(length & 0xff))
+			packedBytes.append(UInt8((length >> 24) & 0xff))
+			packedBytes.append(UInt8((length >> 16) & 0xff))
+			packedBytes.append(UInt8((length >> 8) & 0xff))
+			packedBytes.append(UInt8(length & 0xff))
 		}
 		// Append real data
-		bytes.append(contentsOf: data_sequence)
-		// Get generated data
-		let data = Data(bytes: data_sequence)
-		return (data,bytes)
+		packedBytes.append(contentsOf: rawBytes)
+
+		return (rawBytes, packedBytes)
 	}
 	
 	func generateRandomNumberSequence(_ length: Int) -> [UInt8] {
@@ -109,7 +108,7 @@ class SwiftMsgPackTests_Data: XCTestCase {
 		return items
 	}
 	
-	func performTestData(name testName: String, value: Data, expected bytes: [UInt8]) {
+	func performTestData(name testName: String, value: [UInt8], expected bytes: [UInt8]) {
 		var packed = Data()
 		
 		do {
@@ -138,7 +137,7 @@ class SwiftMsgPackTests_Data: XCTestCase {
 			}
 			
 			// Cast to Data object
-			guard let unpacked_data = unpacked as? Data else {
+			guard let unpacked_data = unpacked as? [UInt8] else {
 				XCTFail("[\(testName)] Failed to cast unpacked data to `Data` instance")
 				return
 			}

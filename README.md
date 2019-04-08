@@ -43,6 +43,7 @@ Take a look below:
 
 ## Current Release
 
+* **Swift 5.x**: Latest is 2.0.0 [Download here](https://github.com/kirilltitov/SwiftMsgPack/releases/tag/2.0.0).
 * **Swift 4.x**: Latest is 1.0.0 [Download here](https://github.com/malcommac/SwiftMsgPack/releases/tag/1.0.0).
 * **Swift 3.x**: Last is 0.9.1 [Download here](https://github.com/malcommac/SwiftMsgPack/releases/tag/0.9.1).
 
