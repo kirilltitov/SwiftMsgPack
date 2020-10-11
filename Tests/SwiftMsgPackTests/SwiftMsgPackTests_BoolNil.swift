@@ -44,6 +44,12 @@ class SwiftMsgPackTests_BoolNil: XCTestCase {
 	override func tearDown() {
 		super.tearDown()
 	}
+
+	static let allTests = [
+		("testBoolean_true", testBoolean_true),
+		("testBoolean_false", testBoolean_false),
+		("testNil", testNil),
+	];
 	
 	// MARK: - Test `bool` type
 	

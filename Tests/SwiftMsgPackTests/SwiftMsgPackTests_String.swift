@@ -43,6 +43,14 @@ class SwiftMsgPackTests_String: XCTestCase {
     override func tearDown() {
         super.tearDown()
     }
+
+	static let allTests = [
+		("test_emptyString", test_emptyString),
+		("test_longString", test_longString),
+		("test_mediumString", test_mediumString),
+		("test_shortString", test_shortString),
+		("test_tinyString", test_tinyString),
+	];
 	
 	// MARK: - Tests
 	
@@ -132,10 +140,9 @@ class SwiftMsgPackTests_String: XCTestCase {
 	/// - Returns: randome alphanumeric string
 	func randomString(length: Int) -> String {
 		let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-		let len = UInt32(letters.length)
 		var randomString = ""
 		for _ in 0 ..< length {
-			let rand = arc4random_uniform(len)
+			let rand = Int.random(in: 0..<letters.length)
 			var nextChar = letters.character(at: Int(rand))
 			randomString += NSString(characters: &nextChar, length: 1) as String
 		}

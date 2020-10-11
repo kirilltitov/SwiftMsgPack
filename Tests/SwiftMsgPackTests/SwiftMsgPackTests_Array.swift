@@ -43,6 +43,12 @@ class SwiftMsgPackTests_Array: XCTestCase {
 	override func tearDown() {
 		super.tearDown()
 	}
+
+	static let allTests = [
+		("testSmallArray", testSmallArray),
+		("testMediumArray", testMediumArray),
+		("testLongArray", testLongArray),
+	];
 	
 	// MARK: - Test on Array type
 	
@@ -163,10 +169,9 @@ class SwiftMsgPackTests_Array: XCTestCase {
 	/// - Returns: random alphanumeric string
 	func randomString(length: Int) -> String {
 		let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-		let len = UInt32(letters.length)
 		var randomString = ""
 		for _ in 0 ..< length {
-			let rand = arc4random_uniform(len)
+			let rand = Int.random(in: 0..<letters.length)
 			var nextChar = letters.character(at: Int(rand))
 			randomString += NSString(characters: &nextChar, length: 1) as String
 		}
@@ -181,7 +186,7 @@ class SwiftMsgPackTests_Array: XCTestCase {
 	///   - max: max value
 	/// - Returns: random value
 	func randomValue(min: Int, max: Int) -> Int {
-		return Int(arc4random_uniform(UInt32(max) - UInt32(min)) + UInt32(min))
+		return Int.random(in: min..<max)
 	}
 	
 	func performTestOnArray(name testName: String, value: [Any?], expected bytes: [UInt8]) {
