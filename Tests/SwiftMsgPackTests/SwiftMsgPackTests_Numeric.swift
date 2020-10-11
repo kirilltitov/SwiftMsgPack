@@ -43,6 +43,19 @@ class SwiftMsgPackTests_Numeric: XCTestCase {
 	override func tearDown() {
 		super.tearDown()
 	}
+
+	static let allTests = [
+		("testDouble", testDouble),
+		("testFloat", testFloat),
+		("testInt16", testInt16),
+		("testInt32", testInt32),
+		("testInt64", testInt64),
+		("testInt8", testInt8),
+		("testUInt16", testUInt16),
+		("testUInt32", testUInt32),
+		("testUInt64", testUInt64),
+		("testUInt8", testUInt8),
+	];
 	
 	// MARK: - UInt8
 

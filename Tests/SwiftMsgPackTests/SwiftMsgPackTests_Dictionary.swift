@@ -44,6 +44,12 @@ class SwiftMsgPackTests_Dictionary: XCTestCase {
 		super.tearDown()
 	}
 
+	static let allTests = [
+		("testSmallDictionary", testSmallDictionary),
+		("testMediumDictionary", testMediumDictionary),
+		("testLargeDictionary", testLargeDictionary),
+	];
+
 	// MARK: - Test on Dictionary type
 	
 	func testSmallDictionary() {
@@ -162,10 +168,9 @@ class SwiftMsgPackTests_Dictionary: XCTestCase {
 	/// - Returns: random alphanumeric string
 	func randomString(length: Int) -> String {
 		let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-		let len = UInt32(letters.length)
 		var randomString = ""
 		for _ in 0 ..< length {
-			let rand = arc4random_uniform(len)
+			let rand = Int.random(in: 0..<letters.length)
 			var nextChar = letters.character(at: Int(rand))
 			randomString += NSString(characters: &nextChar, length: 1) as String
 		}
@@ -180,7 +185,7 @@ class SwiftMsgPackTests_Dictionary: XCTestCase {
 	///   - max: max value
 	/// - Returns: random value
 	func randomValue(min: Int, max: Int) -> Int {
-		return Int(arc4random_uniform(UInt32(max) - UInt32(min)) + UInt32(min))
+		return Int.random(in: min..<max)
 	}
 	
 	func performTestOnDictionary(name testName: String, value: [AnyHashable:Any?], expected bytes: [UInt8]) {

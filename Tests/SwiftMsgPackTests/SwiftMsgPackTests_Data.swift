@@ -44,7 +44,13 @@ class SwiftMsgPackTests_Data: XCTestCase {
 	override func tearDown() {
 		super.tearDown()
 	}
-	
+
+	static let allTests = [
+		("test_shortData", test_shortData),
+		("test_mediumData", test_mediumData),
+		("test_bigData", test_bigData),
+	];
+
 	// MARK: - Test Data
 
 	func test_shortData() {
@@ -101,9 +107,7 @@ class SwiftMsgPackTests_Data: XCTestCase {
 	func generateRandomNumberSequence(_ length: Int) -> [UInt8] {
 		var items: [UInt8] = []
 		for _ in 0..<length {
-			let val = ( UInt8.max - UInt8.min) + UInt8.min
-			let randomNum = Int(arc4random_uniform(UInt32(val)))
-			items.append(UInt8(randomNum))
+			items.append(UInt8.random(in: 0..<UInt8.max))
 		}
 		return items
 	}
