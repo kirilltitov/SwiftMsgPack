@@ -221,25 +221,25 @@ public extension Data {
 			try self.writeDataTypeHeader(.uInt8)
 			
 			var data = UInt8(value)
-			self.append(UnsafeBufferPointer(start: &data, count: 1))
+			self.appendBitPattern(&data)
 			
 		case UInt64(UInt16.min)...UInt64(UInt16.max):
 			try self.writeDataTypeHeader(.uInt16)
 			
 			var data = UInt16(value).bigEndian
-			self.append(UnsafeBufferPointer(start: &data, count: 1))
+			self.appendBitPattern(&data)
 			
 		case UInt64(UInt32.min)...UInt64(UInt32.max):
 			try self.writeDataTypeHeader(.uInt32)
 			
 			var data = UInt32(value).bigEndian
-			self.append(UnsafeBufferPointer(start: &data, count: 1))
+			self.appendBitPattern(&data)
 			
 		default:
 			try self.writeDataTypeHeader(.uInt64)
 			// Write value
 			var data = UInt64(value).bigEndian
-			self.append(UnsafeBufferPointer(start: &data, count: 1))
+			self.appendBitPattern(&data)
 		}
 		
 		return self
@@ -260,28 +260,28 @@ public extension Data {
 			try self.writeDataTypeHeader(.int32)
 
 			var data = UInt32(value).bigEndian
-			self.append(UnsafeBufferPointer(start: &data, count: 1))
+			self.appendBitPattern(&data)
 			
 		// UNSIGNED INT 16 BIT
 		case (Int(Int16.max) + 1)...Int(UInt16.max):
 			try self.writeDataTypeHeader(.uInt16)
 
 			var data = UInt16(value).bigEndian
-			self.append(UnsafeBufferPointer(start: &data, count: 1))
+			self.appendBitPattern(&data)
 			
 		// POSITIVE INT 16 BIT
 		case (Int(UInt8.max) + 1)...Int(Int16.max):
 			try self.writeDataTypeHeader(.int16)
 
 			var data = UInt16(value).bigEndian
-			self.append(UnsafeBufferPointer(start: &data, count: 1))
+			self.appendBitPattern(&data)
 			
 		// UNSIGNED INT 8 BIT
 		case (Int(Int8.max) + 1)...Int(UInt8.max):
 			try self.writeDataTypeHeader(.uInt8)
 			
 			var data = UInt8(value)
-			self.append(UnsafeBufferPointer(start: &data, count: 1))
+			self.appendBitPattern(&data)
 			
 		// POSITIVE INT 8 BIT
 		case 0...Int(Int8.max):
@@ -296,28 +296,28 @@ public extension Data {
 			try self.writeDataTypeHeader(.nInt8)
 
 			var data = UInt8(value & 0xff)
-			self.append(UnsafeBufferPointer(start: &data, count: 1))
+			self.appendBitPattern(&data)
 		
 		// NEGATIVE INT 16 BIT
 		case Int(Int16.min)...(Int(Int8.min) - 1):
 			try self.writeDataTypeHeader(.nInt16)
 
 			var data = UInt16(bitPattern: Int16(value)).bigEndian
-			self.append(UnsafeBufferPointer(start: &data, count: 1))
+			self.appendBitPattern(&data)
 		
 		// NEGATIVE INT 32 BIT
 		case Int(Int32.min)...(Int(Int16.min) - 1):
 			try self.writeDataTypeHeader(.nInt32)
 
 			var data = UInt32(bitPattern: Int32(value)).bigEndian
-			self.append(UnsafeBufferPointer(start: &data, count: 1))
+			self.appendBitPattern(&data)
 		
 		// INT 64 BIT
 		default:
 			try self.writeDataTypeHeader(.int64)
 			
 			var data = UInt64(bitPattern: Int64(value)).bigEndian
-			self.append(UnsafeBufferPointer(start: &data, count: 1))
+			self.appendBitPattern(&data)
 		}
 		
 		return self
@@ -334,7 +334,7 @@ public extension Data {
 		try self.writeDataTypeHeader(.float)
 		
 		var data = value.bitPattern.bigEndian
-		self.append(UnsafeBufferPointer(start: &data, count: 1))
+		self.appendBitPattern(&data)
 		return self
 	}
 	
@@ -349,7 +349,7 @@ public extension Data {
 		try self.writeDataTypeHeader(.double)
 		
 		var data = value.bitPattern.bigEndian
-		self.append(UnsafeBufferPointer(start: &data, count: 1))
+		self.appendBitPattern(&data)
 		return self
 	}
 	
@@ -429,7 +429,7 @@ public extension Data {
 	/// - Parameter type: type to write
 	private mutating func writeDataTypeHeader(_ type: MsgPackType) throws {
 		var type_value = try type.value()
-		self.append( UnsafeBufferPointer(start: &type_value, count: 1) )
+		self.appendBitPattern(&type_value)
 	}
 	
 	
@@ -452,10 +452,10 @@ public extension Data {
 		if length < 16 {
 		} else if length < Int(UInt16.max) {
 			var data_len = UInt16(length).bigEndian
-			self.append(UnsafeBufferPointer(start: &data_len, count: 1))
+			self.appendBitPattern(&data_len)
 		} else { //if length < Int(UInt32.max) {
 			var data_len = UInt32(length).bigEndian
-			self.append(UnsafeBufferPointer(start: &data_len, count: 1))
+			self.appendBitPattern(&data_len)
 		}
 	}
 	
@@ -471,10 +471,10 @@ public extension Data {
 		if length < 16 {
 		} else if length < Int(UInt16.max) {
 			var data_len = UInt16(length).bigEndian
-			self.append(UnsafeBufferPointer(start: &data_len, count: 1))
+			self.appendBitPattern(&data_len)
 		} else { //if length < Int(UInt32.max) {
 			var data_len = UInt32(length).bigEndian
-			self.append(UnsafeBufferPointer(start: &data_len, count: 1))
+			self.appendBitPattern(&data_len)
 		}
 
 	}
@@ -490,15 +490,15 @@ public extension Data {
 		}
 		else if length < Int(UInt8.max) {
 			var len_data = UInt8(length)
-			self.append(UnsafeBufferPointer(start: &len_data, count: 1))
+			self.appendBitPattern(&len_data)
 		}
 		else if length < Int(UInt16.max) {
 			var len_data = UInt16(length).bigEndian
-			self.append(UnsafeBufferPointer(start: &len_data, count: 1))
+			self.appendBitPattern(&len_data)
 		}
 		else { //if length < Int(UInt32.max) {
 			var len_data = UInt32(length).bigEndian
-			self.append(UnsafeBufferPointer(start: &len_data, count: 1))
+			self.appendBitPattern(&len_data)
 		}
 	}
 	
@@ -513,21 +513,28 @@ public extension Data {
 			try self.writeDataTypeHeader(.bin8)
 			
 			var data_len = UInt8(length)
-			self.append(UnsafeBufferPointer(start: &data_len, count: 1))
+			self.appendBitPattern(&data_len)
 		}
 			// 16 BIT LENGTH
 		else if length < Int(UInt16.max) {
 			try self.writeDataTypeHeader(.bin16)
 			
 			var data_len = UInt16(length).bigEndian
-			self.append(UnsafeBufferPointer(start: &data_len, count: 1))
+			self.appendBitPattern(&data_len)
 		}
 			// 32 BIT LENGTH
 		else { // if length < Int(UInt32.max) {
 			try self.writeDataTypeHeader(.bin32)
 			
 			var data_len = UInt32(length).bigEndian
-			self.append(UnsafeBufferPointer(start: &data_len, count: 1))
+			self.appendBitPattern(&data_len)
+		}
+	}
+
+	@usableFromInline
+	internal mutating func appendBitPattern<T>(_ value: inout T) {
+		withUnsafePointer(to: &value) {
+			self.append(UnsafeBufferPointer(start: $0, count: 1))
 		}
 	}
 }
